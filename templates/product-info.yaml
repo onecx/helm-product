@@ -1,0 +1,19 @@
+{{- if .Values.info.enabled }}
+{{- if eq .Values.info.version "v1" }}
+apiVersion: onecx.github.io/v1
+kind: Product
+metadata:
+  name: {{ template "product.fullname" $ }}
+  labels:
+    app: {{ template "product.fullname" $ }}
+{{ include "product.labels.common" $ | indent 4 }}    
+spec:
+  name: {{ template "product.fullname" $ }}
+  description: {{ .Values.info.data.description }}
+  version: {{ .Values.version }}
+  imageUrl: {{ .Values.info.data.imageUrl }}
+  iconName: {{ .Values.info.data.iconName }}
+  displayName: {{ .Values.info.data.displayName }}
+  basePath: {{ .Values.info.data.basePath }}
+{{- end }}
+{{- end }}

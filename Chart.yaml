@@ -1,0 +1,10 @@
+apiVersion: v2
+name: helm-product
+version: 0.0.0
+description: Product helm chart
+appVersion: 0.0.0
+keywords:
+  - product
+maintainers:
+  - name: Tkit Developer
+    email: tkit-dev@1000kit.org

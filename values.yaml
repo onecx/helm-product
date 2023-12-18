@@ -1,0 +1,21 @@
+# product version
+version: 0.0.0
+
+# product info
+info:
+  # disable or enable product info resource
+  enabled: true
+  # version of the product info resoruce
+  version: "v1"
+  # data for the product info
+  data:
+    # product description
+    description: default product description
+    # product image URL
+    imageUrl: default image URL
+    # product icon name
+    iconName: default icon name
+    # product display name
+    displayName:  default display name
+    # product base path
+    basePath: default base path
