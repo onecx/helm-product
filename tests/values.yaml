@@ -12,12 +12,12 @@ info:
     # product description
     description: default product description
     # product image URL
-    imageUrl:
+    imageUrl: default
     # product icon name
-    iconName:
+    iconName: a
     # product display name
     displayName:  default display name
     # product base path
-    basePath:
+    basePath: path
     # product classifications list
     classifications: []

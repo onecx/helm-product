@@ -1,6 +1,6 @@
 {{- if .Values.info.enabled }}
 {{- if eq .Values.info.version "v1" }}
-apiVersion: onecx.github.io/v1
+apiVersion: onecx.tkit.org/v1
 kind: Product
 metadata:
   name: {{ template "product.fullname" $ }}
@@ -11,9 +11,18 @@ spec:
   name: {{ template "product.fullname" $ }}
   description: {{ .Values.info.data.description }}
   version: {{ .Values.version }}
+  {{- if .Values.info.data.imageUrl }}
   imageUrl: {{ .Values.info.data.imageUrl }}
+  {{- end }}
+  {{- if .Values.info.data.iconName }}
   iconName: {{ .Values.info.data.iconName }}
+  {{- end }}
   displayName: {{ .Values.info.data.displayName }}
+  {{- if .Values.info.data.basePath }}
   basePath: {{ .Values.info.data.basePath }}
+  {{- end }}
+  {{- if .Values.info.data.classifications }}
+  classifications: {{ .Values.info.data.classifications }}
+  {{- end }}
 {{- end }}
 {{- end }}
