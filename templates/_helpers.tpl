@@ -1,5 +1,9 @@
 {{- define "product.fullname" -}}
-    {{ .Release.Name }}
+    {{- if .Values.info.data.name -}}
+        {{ .Values.info.data.name }}
+    {{- else -}}
+        {{ .Release.Name }}
+    {{- end -}}
 {{- end -}}
 
 {{- define "product.labels.common" -}}

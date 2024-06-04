@@ -9,6 +9,8 @@ info:
   version: "v1"
   # data for the product info
   data:
+    # Override the product name if necessary
+    name:
     # product description
     description: default product description
     # product image URL
