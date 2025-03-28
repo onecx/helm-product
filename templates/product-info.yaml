@@ -21,8 +21,11 @@ spec:
   {{- if .Values.info.data.basePath }}
   basePath: {{ .Values.info.data.basePath }}
   {{- end }}
+  {{- if .Values.info.data.provider }}
+  provider: {{ .Values.info.data.provider }}
+  {{- end }}
   {{- if .Values.info.data.classifications }}
-  classifications: {{ .Values.info.data.classifications }}
+  classifications: {{ .Values.info.data.classifications | toYaml | nindent 4 }}
   {{- end }}
 {{- end }}
 {{- end }}

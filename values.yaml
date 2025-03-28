@@ -21,5 +21,7 @@ info:
     displayName:  default display name
     # product base path
     basePath:
+    # product provider
+    provider: 
     # product classifications list
     classifications: []
