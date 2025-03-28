@@ -19,5 +19,7 @@ info:
     displayName:  default display name
     # product base path
     basePath: path
+    # product provider
+    provider: test
     # product classifications list
-    classifications: []
+    classifications: [class1, class2]
