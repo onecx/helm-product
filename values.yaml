@@ -25,3 +25,5 @@ info:
     provider: 
     # product classifications list
     classifications: []
+    # product multi-tenancy capability
+    multitenancy:
