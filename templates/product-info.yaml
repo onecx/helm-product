@@ -27,5 +27,8 @@ spec:
   {{- if .Values.info.data.classifications }}
   classifications: {{ .Values.info.data.classifications | toYaml | nindent 4 }}
   {{- end }}
+  {{- if .Values.info.data.multitenancy }}
+  multitenancy: {{ .Values.info.data.multitenancy }}
+  {{- end }}
 {{- end }}
 {{- end }}
